@@ -7,7 +7,7 @@ import com.twilio.sdk.verbs.*;
 
 public class PhoneMenu {
 	
-	static String BASEURL="http://www.enter_your_domain_here.com:8080/phonemenu/phonemenu.jsp";
+	static String BASEURL="https://phonemenu.herokuapp.com/phonemenu/phonemenu.jsp";
 	
 	public static void main(String[] args) {
 		System.out.println(PhoneMenu.getTwiML(null,null));
