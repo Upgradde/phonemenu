@@ -41,7 +41,7 @@ switch($destination) {
 		<Say>Take Cal Train to the Milbrae BART station. Take any Bart train to Powell Street</Say>
 		<?php break;
 	case 'duck'; ?>
-		<Play>duck.mp3</Play>
+		<Play>hello.mp3</Play>
 		<?php break;
 	case 'receptionist'; ?>
 		<Say>Please wait while we connect you</Say>
