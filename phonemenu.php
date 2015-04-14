@@ -45,7 +45,7 @@ switch($destination) {
 		<?php break;
 	case 'receptionist'; ?>
 		<Say>Please wait while we connect you</Say>
-		<Dial>+12104522029</Dial>
+		<Dial>NNNNNNNNNN</Dial>
 		<?php break;
 	default: ?>
 		<Gather action="<?php echo 'http://' . dirname($_SERVER["SERVER_NAME"] .  $_SERVER['PHP_SELF']) . '/phonemenu.php?node=default'; ?>" numDigits="1">
