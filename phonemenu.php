@@ -41,7 +41,7 @@ switch($destination) {
 		<Say>Take Interstate Highway 10 East</Say>
 		<?php break;
 	case 'duck'; ?>
-		<Play>duck.mp3</Play>
+		<Play>hello.mp3</Play>
 		<?php break;
 	case 'receptionist'; ?>
 		<Say>Please wait while we connect you</Say>
