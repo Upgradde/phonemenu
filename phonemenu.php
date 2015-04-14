@@ -49,7 +49,7 @@ switch($destination) {
 		<?php break;
 	default: ?>
 		<Gather action="<?php echo 'http://' . dirname($_SERVER["SERVER_NAME"] .  $_SERVER['PHP_SELF']) . '/phonemenu.php?node=default'; ?>" numDigits="1">
-			<Say>Hello and welcome to the Joey Press Phone Menu</Say>
+			<Say voice="woman" language="en-gb">Hello and welcome to the Joey Press Phone Menu</Say>
 			<Say>For business hours, press 1</Say>
 			<Say>For directions, press 2</Say>
 			<Say>To hear a duck quack, press 3</Say>
