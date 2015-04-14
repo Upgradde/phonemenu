@@ -24,27 +24,27 @@ header("content-type: text/xml");
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Response>\n";
 switch($destination) {
 	case 'hours': ?>
-		<Say>Joey press is open Monday through Friday, 9am to 5pm</Say>
-		<Say>Saturday, 10am to 3pm and closed on Sundays</Say>
+		<Say voice="woman" language="en-gb">Joey press is open Monday through Friday, 9am to 5pm</Say>
+		<Say voice="woman" language="en-gb">Saturday, 10am to 3pm and closed on Sundays</Say>
 		<?php break;
 	case 'location': ?>
-		<Say>Joey Press is located at 21650 Milsa Drive in San Antonio Texas</Say>
+		<Say voice="woman" language="en-gb">Joey Press is located at 21650 Milsa Drive in San Antonio Texas</Say>
 		<Gather action="<?php echo 'http://' . dirname($_SERVER["SERVER_NAME"] .  $_SERVER['PHP_SELF']) . '/phonemenu.php?node=location'; ?>" numDigits="1">
-			<Say>For directions from the Austin, press 1</Say>
-			<Say>For directions from San Bernny, press 2</Say>
+			<Say voice="woman" language="en-gb">For directions from the Austin, press 1</Say>
+			<Say voice="woman" language="en-gb">For directions from San Bernny, press 2</Say>
 		</Gather>
 		<?php break;
 	case 'east-bay': ?>
-		<Say>Take Interstate Highway 10 West towards San Antonio. Exit Dominion Drive and take the turnaround. Turn right on Milsa.  We are right behind the Lexus deakership</Say>
+		<Say voice="woman" language="en-gb">Take Interstate Highway 10 West towards San Antonio. Exit Dominion Drive and take the turnaround. Turn right on Milsa.  We are right behind the Lexus deakership</Say>
 		<?php break;
 	case 'san-jose': ?>
-		<Say>Take Interstate Highway 10 East</Say>
+		<Say voice="woman" language="en-gb">Take Interstate Highway 10 East</Say>
 		<?php break;
 	case 'duck'; ?>
 		<Play>hello.mp3</Play>
 		<?php break;
 	case 'receptionist'; ?>
-		<Say>Please wait while we connect you</Say>
+		<Say voice="woman" language="en-gb">Please wait while we connect you</Say>
 		<Dial>NNNNNNNNNN</Dial>
 		<?php break;
 	default: ?>
