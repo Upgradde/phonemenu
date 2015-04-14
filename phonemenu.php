@@ -50,10 +50,10 @@ switch($destination) {
 	default: ?>
 		<Gather action="<?php echo 'http://' . dirname($_SERVER["SERVER_NAME"] .  $_SERVER['PHP_SELF']) . '/phonemenu.php?node=default'; ?>" numDigits="1">
 			<Say voice="woman" language="en-gb">Hello and welcome to the Joey Press Phone Menu</Say>
-			<Say>For business hours, press 1</Say>
-			<Say>For directions, press 2</Say>
-			<Say>To hear a duck quack, press 3</Say>
-			<Say>To speak to a receptionist, press 0</Say>
+			<Say voice="woman" language="en-gb">For business hours, press 1</Say>
+			<Say voice="woman" language="en-gb">For directions, press 2</Say>
+			<Say voice="woman" language="en-gb">To hear a duck quack, press 3</Say>
+			<Say voice="woman" language="en-gb">To speak to a receptionist, press 0</Say>
 		</Gather>
 		<?php
 		break;
