@@ -4,7 +4,7 @@
 /* Define Menu */
 $web = array();
 $web['default'] = array('receptionist','hours', 'location', 'duck');
-$web['location'] = array('receptionist','east-bay', 'san-jose', 'marin');
+$web['location'] = array('receptionist','austin', 'boerne', 'marin');
 
 /* Get the menu node, index, and url */
 $node = $_REQUEST['node'];
@@ -31,17 +31,17 @@ switch($destination) {
 		<Say voice="woman" language="en-gb">Joey Press is located at 21650 Milsa Drive in San Antonio Texas</Say>
 		<Gather action="<?php echo 'http://' . dirname($_SERVER["SERVER_NAME"] .  $_SERVER['PHP_SELF']) . '/phonemenu.php?node=location'; ?>" numDigits="1">
 			<Say voice="woman" language="en-gb">For directions from the Austin, press 1</Say>
-			<Say voice="woman" language="en-gb">For directions from San Bernny, press 2</Say>
+			<Say voice="woman" language="en-gb">For directions from Bernnie, press 2</Say>
 		</Gather>
 		<?php break;
-	case 'east-bay': ?>
+	case 'austin': ?>
 		<Say voice="woman" language="en-gb">Take Interstate Highway 10 West towards San Antonio. Exit Dominion Drive and take the turnaround. Turn right on Milsa.  We are right behind the Lexus deakership</Say>
 		<?php break;
-	case 'san-jose': ?>
-		<Say voice="woman" language="en-gb">Take Interstate Highway 10 East</Say>
+	case 'boerne': ?>
+		<Say voice="woman" language="en-gb">Take Interstate Highway 10 East, exit Ralph Fair Road and continue on the feeder road.  Turn right on Milsa Drive.   We are right behind the Lexus deakership</Say>
 		<?php break;
 	case 'duck'; ?>
-		<Play>hello.mp3</Play>
+		<Play>duck.mp3</Play>
 		<?php break;
 	case 'receptionist'; ?>
 		<Say voice="woman" language="en-gb">Please wait while we connect you</Say>
@@ -63,7 +63,7 @@ switch($destination) {
 // @start snippet
 if($destination && $destination != 'receptionist') { ?>
 	<Pause/>
-	<Say>Main Menu</Say>
+	<Say voice="woman" language="en-gb">Main Menu</Say>
 	<Redirect><?php echo 'http://' . dirname($_SERVER["SERVER_NAME"] .  $_SERVER['PHP_SELF']) . '/phonemenu.php' ?></Redirect>
 <?php }
 // @end snippet
